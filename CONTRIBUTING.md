@@ -20,7 +20,7 @@ If you want some code examples for how to write watchers or other types of clien
 There are many ways to contribute to ActivityWatch:
 
  - Help with testing by being an early user and reporting bugs.
- - Help with one of the issues labeled [`help wanted`](https://github.com/ActivityWatch/activitywatch/issues?q=is%3Aissue+is%3Aopen+label%3A%22help+wanted%22), these are especially suited for new contributors.
+ - Help with one of the issues labeled [`help wanted`](https://github.com/vinothkumart/activitywatch/issues?q=is%3Aissue+is%3Aopen+label%3A%22help+wanted%22), these are especially suited for new contributors.
  - Help write documentation.
  - Help build the ecosystem.
    - Examples: New watchers, tools to analyze data, tools to import data from other sources, etc.
@@ -72,7 +72,7 @@ Examples:
  - docs: improved query documentation 
 ```
 
-This guideline was adopted in [issue #391](https://github.com/ActivityWatch/activitywatch/issues/391).
+This guideline was adopted in [issue #391](https://github.com/vinothkumart/activitywatch/issues/391).
 
 
 ## Questions?

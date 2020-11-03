@@ -37,7 +37,7 @@ build:
 	make --directory=aw-server build SKIP_WEBUI=$(SKIP_WEBUI)
 	# make --directory=aw-server-rust build SKIP_WEBUI=$(SKIP_WEBUI)
 	make --directory=aw-qt build
-#   The below is needed due to: https://github.com/ActivityWatch/activitywatch/issues/173
+#   The below is needed due to: https://github.com/vinothkumart/activitywatch/issues/173
 	make --directory=aw-client build
 	make --directory=aw-core build
 #	Needed to ensure that the server has the correct version set
@@ -166,7 +166,7 @@ package:
 #
 	make --directory=aw-qt package
 	cp -r aw-qt/dist/aw-qt/. dist/activitywatch
-# Remove problem-causing binaries, see https://github.com/ActivityWatch/activitywatch/issues/161
+# Remove problem-causing binaries, see https://github.com/vinothkumart/activitywatch/issues/161
 	rm -f dist/activitywatch/libdrm.so.2
 # Remove unecessary files
 	rm -rf dist/activitywatch/pytz

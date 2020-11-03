@@ -11,7 +11,7 @@
   <a href="https://twitter.com/ActivityWatchIt">
     <img title="Twitter follow" src="https://img.shields.io/twitter/follow/ActivityWatchIt.svg?style=social&label=Follow"/>
   </a>
-  <a href="https://github.com/ActivityWatch/activitywatch">
+  <a href="https://github.com/vinothkumart/activitywatch">
     <img title="Star on GitHub" src="https://img.shields.io/github/stars/ActivityWatch/activitywatch.svg?style=social&label=Star">
   </a>
 
@@ -21,7 +21,7 @@
     <a href="https://activitywatch.net/">Website</a>
     — <a href="https://forum.activitywatch.net/">Forum</a>
     — <a href="https://activitywatch.readthedocs.io">Documentation</a>
-    — <a href="https://github.com/ActivityWatch/activitywatch/releases">Releases</a>
+    — <a href="https://github.com/vinothkumart/activitywatch/releases">Releases</a>
   </b>
 
   <br>
@@ -39,8 +39,8 @@
 
   <br>
 
-  <a href="https://github.com/ActivityWatch/activitywatch/actions?query=branch%3Amaster">
-    <img title="Build Status GitHub" src="https://github.com/ActivityWatch/activitywatch/workflows/Build/badge.svg?branch=master" />
+  <a href="https://github.com/vinothkumart/activitywatch/actions?query=branch%3Amaster">
+    <img title="Build Status GitHub" src="https://github.com/vinothkumart/activitywatch/workflows/Build/badge.svg?branch=master" />
   </a>
   <a href="https://travis-ci.org/ActivityWatch/activitywatch">
     <img title="Build Status Travis" src="https://travis-ci.org/ActivityWatch/activitywatch.svg?branch=master" />
@@ -54,10 +54,10 @@
 
   <br>
 
-  <a href="https://github.com/ActivityWatch/activitywatch/releases">
+  <a href="https://github.com/vinothkumart/activitywatch/releases">
     <img title="Latest release" src="https://img.shields.io/github/release-pre/ActivityWatch/activitywatch.svg">
   </a>
-  <a href="https://github.com/ActivityWatch/activitywatch/releases">
+  <a href="https://github.com/vinothkumart/activitywatch/releases">
     <img title="Total downloads (GitHub Releases)" src="https://img.shields.io/github/downloads/ActivityWatch/activitywatch/total.svg" />
   </a>
 </p>
@@ -107,7 +107,7 @@ It is up to you as user to collect as much as you want, or as little as you want
 
 ## Installation & Usage
 
-Downloads are available on our [releases page](https://github.com/ActivityWatch/activitywatch/releases).
+Downloads are available on our [releases page](https://github.com/vinothkumart/activitywatch/releases).
 
 For instructions on how to get started, please see [our guide in the documentation](https://activitywatch.readthedocs.io/en/latest/getting-started.html).
 
@@ -146,7 +146,7 @@ We have a plan to address all of these and we're well on our way. See the table 
 | [RescueTime]    | :x:                | :white_check_mark: | Centralized                | :x:                |
 | [WakaTime]      | :x:                | :white_check_mark: | Centralized                | Clients            |
 
-[sync]: https://github.com/ActivityWatch/activitywatch/issues/35
+[sync]: https://github.com/vinothkumart/activitywatch/issues/35
 [Selfspy]: https://github.com/selfspy/selfspy
 [ulogme]: https://github.com/karpathy/ulogme
 [RescueTime]: https://www.rescuetime.com/
@@ -162,7 +162,7 @@ We have a plan to address all of these and we're well on our way. See the table 
 | ulogme        | :x:                | :white_check_mark: | :white_check_mark: | :x:                |
 | RescueTime    | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | 
 
-[android]: https://github.com/ActivityWatch/activitywatch/issues/6
+[android]: https://github.com/vinothkumart/activitywatch/issues/6
 
 ##### Tracking
 
@@ -179,7 +179,7 @@ For a complete list of the things ActivityWatch can track, [see the page on *wat
 
 ## About this repository
 
-This repo is a bundle of the core components and official modules of ActivityWatch (managed with `git submodule`). It's primary use is as a meta-package providing all the components in one repo; enabling easier packaging and installation. It is also where releases of the full suite are published (see [releases](https://github.com/ActivityWatch/activitywatch/releases)).
+This repo is a bundle of the core components and official modules of ActivityWatch (managed with `git submodule`). It's primary use is as a meta-package providing all the components in one repo; enabling easier packaging and installation. It is also where releases of the full suite are published (see [releases](https://github.com/vinothkumart/activitywatch/releases)).
 
 ### Server
 

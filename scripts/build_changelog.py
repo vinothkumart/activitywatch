@@ -8,12 +8,12 @@ def run(cmd) -> str:
 
 def process_line(s: str, repo: str) -> str:
     """Generates links from commit and issue references (like 0c14d77, #123) to correct repo and such"""
-    s = re.sub(r"#([0-9]+)", rf"[#\1](https://github.com/ActivityWatch/{repo}/issues/\1)", s)
+    s = re.sub(r"#([0-9]+)", rf"[#\1](https://github.com/vinothkumart/{repo}/issues/\1)", s)
     return s
 
 
 def commit_linkify(commitid: str, repo: str) -> str:
-    return f"[`{commitid}`](https://github.com/ActivityWatch/{repo}/commit/{commitid})"
+    return f"[`{commitid}`](https://github.com/vinothkumart/{repo}/commit/{commitid})"
 
 
 def build():

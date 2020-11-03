@@ -8,7 +8,7 @@ pkgrel=1
 epoch=
 pkgdesc="Log what you do on your computer. Simple, extensible, no third parties."
 arch=('i686' 'x86_64')
-url="https://github.com/ActivityWatch/activitywatch"
+url="https://github.com/vinothkumart/activitywatch"
 license=('MPL2')
 groups=()
 depends=('python>=3.5.1' 'extras/python-pyqt5')
@@ -22,7 +22,7 @@ backup=()
 options=()
 install=
 changelog=
-source=("${pkgname}::git+https://github.com/ActivityWatch/activitywatch.git#tag=v$pkgver")
+source=("${pkgname}::git+https://github.com/vinothkumart/activitywatch.git#tag=v$pkgver")
 noextract=()
 md5sums=()
 validpgpkeys=()
