@@ -25,12 +25,7 @@ SHELL := /usr/bin/env bash
 #    packages as user packages (same as `pip install --user <pkg>`). This makes
 #    it possible to install without using a virtualenv (or root).
 build:
-	if [ -e "aw-core/.git" ]; then \
-		echo "Submodules seem to already be initialized, continuing..."; \
-	else \
-		git submodule update --init --recursive; \
-	fi
-#
+
 #	needed due to https://github.com/pypa/setuptools/issues/1963
 #	would ordinarily be specified in pyproject.toml, but is not respected due to https://github.com/pypa/setuptools/issues/1963
 	pip install 'setuptools>49.1.1'
@@ -40,7 +35,7 @@ build:
 	make --directory=aw-watcher-afk build
 	make --directory=aw-watcher-window build
 	make --directory=aw-server build SKIP_WEBUI=$(SKIP_WEBUI)
-	make --directory=aw-server-rust build SKIP_WEBUI=$(SKIP_WEBUI)
+	# make --directory=aw-server-rust build SKIP_WEBUI=$(SKIP_WEBUI)
 	make --directory=aw-qt build
 #   The below is needed due to: https://github.com/ActivityWatch/activitywatch/issues/173
 	make --directory=aw-client build
@@ -108,7 +103,7 @@ lint:
 #
 # Uninstalls all the Python modules.
 uninstall:
-	modules=$$(pip3 list --format=legacy | grep 'aw-' | grep -o '^aw-[^ ]*'); \
+	modules=$$(pip3 list --format=columns | grep 'aw-' | grep -o '^aw-[^ ]*'); \
 	for module in $$modules; do \
 		echo "Uninstalling $$module"; \
 		pip3 uninstall -y $$module; \
@@ -165,9 +160,9 @@ package:
 	make --directory=aw-server package
 	cp -r aw-server/dist/aw-server dist/activitywatch
 #
-	make --directory=aw-server-rust package
-	mkdir -p dist/activitywatch/aw-server-rust
-	cp -r aw-server-rust/target/package/* dist/activitywatch/aw-server-rust
+	# make --directory=aw-server-rust package
+	# mkdir -p dist/activitywatch/aw-server-rust
+	# cp -r aw-server-rust/target/package/* dist/activitywatch/aw-server-rust
 #
 	make --directory=aw-qt package
 	cp -r aw-qt/dist/aw-qt/. dist/activitywatch
